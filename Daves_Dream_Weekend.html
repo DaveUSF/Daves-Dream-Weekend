@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dave's Dream Weekend</title>
+    <link rel="stylesheet" href="dream-style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Dave's Dream Weekend in the Dolomites</h1>
+        <p class="intro">72 hours, $10,000, and one really good weekend in the mountains.</p>
+
+        <!-- UNIQUE CHANGE #1: simple navigation bar -->
+        <nav>
+            <a href="#stay">Where I'm Staying</a>
+            <a href="#packing">Packing</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#budget">Budget</a>
+            <a href="#join">Join Me</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="stay">
+            <h2>Where I'm Staying</h2>
+            <p>I have 72 hours in the Dolomites, a backpack, a good tent, and plenty of time to be outside.</p>
+            <p>The goal is pretty simple: enjoy the views, take some really good photos, and do some of the best hikes I can find.</p>
+            <p>That's the idea of the trip. Nothing too complicated.</p>
+
+            <h3>My campsite</h3>
+            <p>A North Face tent near Alpe di Siusi, where I can wake up to the mountains instead of an alarm clock.</p>
+
+            <p>
+                <a href="https://throneandvine.com/camping-in-the-dolomites/">Camping recommendations</a>
+            </p>
+            <p>
+                <a href="https://www.cntraveler.com/story/discovering-the-dolomites">Dolomites travel recommendations</a>
+            </p>
+
+            <img src="Dolomites.jpg" alt="Tall Dolomite mountains surrounding a green alpine valley" width="700">
+        </section>
+
+        <section id="packing">
+            <h2>What I'm Packing</h2>
+            <ul>
+                <li>Hiking pants</li>
+                <li>3 T-shirts</li>
+                <li>Swimming shorts</li>
+                <li>Hiking shorts</li>
+                <li>Camera and lenses</li>
+                <li>A couple books for the mountains</li>
+            </ul>
+        </section>
+
+        <section id="schedule">
+            <h2>The Schedule</h2>
+            <ol>
+                <li>Thursday - Arrive and set up camp</li>
+                <li>Friday - Full day of hiking and taking photos</li>
+                <li>Saturday - Breakfast, explore Alpe di Siusi, and relax</li>
+            </ol>
+        </section>
+
+        <section id="budget">
+            <h2>Where Did My $10k Go?</h2>
+
+            <!-- UNIQUE CHANGE #2: added a percentage column and total row -->
+            <table>
+                <caption>My Dolomites Budget in USD</caption>
+                <tr>
+                    <th>Expense</th>
+                    <th>Cost</th>
+                    <th>Percent</th>
+                </tr>
+                <tr>
+                    <td>Flights</td>
+                    <td>$2,000</td>
+                    <td>20%</td>
+                </tr>
+                <tr>
+                    <td>Camping and gear</td>
+                    <td>$1,500</td>
+                    <td>15%</td>
+                </tr>
+                <tr>
+                    <td>Food</td>
+                    <td>$1,200</td>
+                    <td>12%</td>
+                </tr>
+                <tr>
+                    <td>Activities</td>
+                    <td>$1,500</td>
+                    <td>15%</td>
+                </tr>
+                <tr>
+                    <td>Transportation</td>
+                    <td>$800</td>
+                    <td>8%</td>
+                </tr>
+                <tr>
+                    <td>Photography and shopping</td>
+                    <td>$3,000</td>
+                    <td>30%</td>
+                </tr>
+                <tr class="total">
+                    <td><strong>Total</strong></td>
+                    <td><strong>$10,000</strong></td>
+                    <td><strong>100%</strong></td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="join">
+            <h2>Want to Join?</h2>
+            <p>Think this sounds like a good weekend? Let me know what you would want to do.</p>
+
+            <!-- UNIQUE CHANGE #3: labeled trip-planning form -->
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name">
+
+                <label for="activity">Favorite activity:</label>
+                <select id="activity" name="activity">
+                    <option value="hiking">Hiking</option>
+                    <option value="photography">Photography</option>
+                    <option value="food">Trying new food</option>
+                    <option value="relaxing">Relaxing</option>
+                </select>
+
+                <label for="message">What would you want to do in the Dolomites?</label>
+                <textarea id="message" name="message" rows="4" placeholder="Tell me your idea..."></textarea>
+
+                <label>
+                    <input type="checkbox" name="ready">
+                    I'm ready for the trip!
+                </label>
+
+                <button type="submit">Sign Me Up</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Dave's Dream Weekend &copy; 2026</p>
+    </footer>
+</body>
+</html>
